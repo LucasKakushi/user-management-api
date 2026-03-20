@@ -72,26 +72,26 @@ dotnet run
 
 ---
 
-##🔑 Usuário padrão (seed)
+## 🔑 Usuário padrão (seed)
 Email: admin@admin.com
 Senha: 123456
 Role: Admin
 
 ---
 
-##📡 Endpoints principais
+## 📡 Endpoints principais
 
-###🔐 Autenticação
+### 🔐 Autenticação
 POST /auth/login
 
-###👤 Usuários
+### 👤 Usuários
 GET    /users
 GET    /users/{id}
 POST   /users        (Admin)
 PUT    /users/{id}   (Admin)
 DELETE /users/{id}   (Admin)
 
-###📄 Paginação
+### 📄 Paginação
 GET /users?page=1&pageSize=10
 
 ###🔎 Filtros
@@ -101,11 +101,11 @@ GET /users?nome=lucas&page=1&pageSize=5
 
 ---
 
-###⚠️ Tratamento de erros
+## ⚠️ Tratamento de erros
 
 A API possui middleware global de exceções.
 
-##🔒 Segurança
+## 🔒 Segurança
 
 - Senhas armazenadas com hash (BCrypt)
 - Autenticação via JWT
@@ -124,7 +124,7 @@ A API possui middleware global de exceções.
 
 ---
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 
 Desenvolvido por Lucas Kakushi
 ---
