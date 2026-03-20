@@ -69,58 +69,62 @@ dotnet ef database update
 
 # rodar a aplicação
 dotnet run
-🔑 Usuário padrão (seed)
+
+---
+
+##🔑 Usuário padrão (seed)
 Email: admin@admin.com
 Senha: 123456
 Role: Admin
-📡 Endpoints principais
-🔐 Autenticação
+
+---
+
+##📡 Endpoints principais
+
+###🔐 Autenticação
 POST /auth/login
-👤 Usuários
+
+###👤 Usuários
 GET    /users
 GET    /users/{id}
 POST   /users        (Admin)
 PUT    /users/{id}   (Admin)
 DELETE /users/{id}   (Admin)
-📄 Paginação
+
+###📄 Paginação
 GET /users?page=1&pageSize=10
-🔎 Filtros
+
+###🔎 Filtros
 GET /users?nome=lucas
 GET /users?email=gmail.com
 GET /users?nome=lucas&page=1&pageSize=5
-⚠️ Tratamento de erros
+
+---
+
+###⚠️ Tratamento de erros
 
 A API possui middleware global de exceções.
 
-Exemplo:
+##🔒 Segurança
 
-{
-  "message": "Email já existe",
-  "statusCode": 400
-}
-🔒 Segurança
+- Senhas armazenadas com hash (BCrypt)
+- Autenticação via JWT
+- Controle de acesso por roles
+- Validação de entrada de dados
 
-Senhas armazenadas com hash (BCrypt)
+---
 
-Autenticação via JWT
+## 📚 Objetivo do projeto
 
-Controle de acesso por roles
+- Este projeto foi desenvolvido com foco em prática de:
+- construção de APIs RESTful
+- organização de código em camadas
+- boas práticas de backend
+- preparação para ambiente profissional
 
-Validação de entrada de dados
+---
 
-📚 Objetivo do projeto
-
-Este projeto foi desenvolvido com foco em prática de:
-
-construção de APIs RESTful
-
-organização de código em camadas
-
-boas práticas de backend
-
-preparação para ambiente profissional
-
-👨‍💻 Autor
+##👨‍💻 Autor
 
 Desenvolvido por Lucas Kakushi
 ---
