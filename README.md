@@ -94,7 +94,7 @@ DELETE /users/{id}   (Admin)
 ### 📄 Paginação
 GET /users?page=1&pageSize=10
 
-###🔎 Filtros
+### 🔎 Filtros
 GET /users?nome=lucas
 GET /users?email=gmail.com
 GET /users?nome=lucas&page=1&pageSize=5
