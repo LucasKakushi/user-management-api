@@ -128,4 +128,3 @@ A API possui middleware global de exceções.
 
 Desenvolvido por Lucas Kakushi
 ---
-```md
