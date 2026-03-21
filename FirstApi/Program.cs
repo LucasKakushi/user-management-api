@@ -70,6 +70,8 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
+    context.Database.Migrate();
+
     if (!context.Users.Any(u => u.Email == "admin@admin.com"))
     {
         var admin = new User
