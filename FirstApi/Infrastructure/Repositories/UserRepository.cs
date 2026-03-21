@@ -18,12 +18,14 @@ namespace FirstApi.Infrastructure.Repositories
 
             if (!string.IsNullOrWhiteSpace(nome))
             {
-                query = query.Where(u => u.Nome.Contains(nome));
+                nome = nome.Trim().ToLower();
+                query = query.Where(u => u.Nome.ToLower().Contains(nome));
             }
 
             if (!string.IsNullOrWhiteSpace(email))
             {
-                query = query.Where(u => u.Email.Contains(email));
+                email = email.Trim().ToLower();
+                query = query.Where(u => u.Email.ToLower().Contains(email));
             }
 
             return await query

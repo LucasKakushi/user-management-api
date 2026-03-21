@@ -19,8 +19,6 @@ namespace FirstApi.Controllers
         {
             _userService = userService;
         }
-
-        [HttpGet]
         [HttpGet]
         public async Task<ActionResult<PagedResultDto<UserResponseDto>>> Get([FromQuery] UserQueryParametersDto parameters)
         {

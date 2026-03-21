@@ -21,7 +21,7 @@ namespace FirstApi.Application.Services
             int skip = (page - 1) * pageSize;
 
             var totalCount = await _userRepository.CountAsync(parameters.Nome, parameters.Email);
-            var users = await _userRepository.GetAllPagedAsync(skip, pageSize, parameters.Nome, parameters.Email);
+            var users = await _userRepository.GetAllPagedAsync(skip, pageSize, parameters.Nome.Trim().ToLower(), parameters.Email.Trim().ToLower());
 
             var items = users.Select(u => new UserResponseDto
             {
