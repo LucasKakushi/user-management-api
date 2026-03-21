@@ -3,6 +3,10 @@
 API RESTful desenvolvida em ASP.NET Core para gerenciamento de usuários, com autenticação JWT, autorização por roles e arquitetura em camadas (Clean Architecture básica).
 
 ---
+## 🛜 API Online
+
+https://user-management-api-ko17.onrender.com/
+---
 
 ## 🚀 Tecnologias utilizadas
 
