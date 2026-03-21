@@ -5,7 +5,7 @@ API RESTful desenvolvida em ASP.NET Core para gerenciamento de usuários, com au
 ---
 ## 🛜 API Online
 
-https://user-management-api-ko17.onrender.com/
+https://user-management-api-kol7.onrender.com/index.html
 ---
 
 ## 🚀 Tecnologias utilizadas
